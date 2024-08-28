@@ -1,23 +1,27 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
-EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
+
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y \
+        nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+
 WORKDIR /src
-COPY ["Mendel.Core/Mendel.Core.csproj", "Mendel.Core/"]
-RUN dotnet restore "Mendel.Core/Mendel.Core.csproj"
+COPY ["Mendel.Web/Mendel.Web.csproj", "Mendel.Web/"]
+RUN dotnet restore "./Mendel.Web/Mendel.Web.csproj"
 COPY . .
-WORKDIR "/src/Mendel.Core"
-RUN dotnet build "Mendel.Core.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Mendel.Web"
+RUN dotnet build "Mendel.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "Mendel.Core.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Mendel.Web.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Mendel.Core.dll"]
+ENTRYPOINT ["dotnet", "Mendel.Web.dll"]

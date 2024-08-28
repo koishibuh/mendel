@@ -1,1 +1,73 @@
+name: Build and Publish Mendel Containers
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: mendel-web
 
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-web:
+    name: Build Mendel Web Container
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    env:
+      REGISTRY: ghcr.io
+      MENDEL_WEB_IMAGE_NAME: mendel-web
+
+    steps:
+      - name: Check out Repo
+        uses: actions/checkout@v3
+
+      - name: Login to Container Registry
+        uses: docker/login-action@v3.3.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tag, labels) for Docker
+        id: meta
+        # uses: docker/metadata-action@v5.5.1
+        uses: docker/metadata-action@8e5442c4ef9f78752691e2d8f8d19755c6f78e81
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.MENDEL_WEB_IMAGE_NAME }}
+
+      - name: Build and push Mendel Web
+        # uses: docker/build-push-action@v6.6.1
+        uses: docker/build-push-action@16ebe778df0e7752d2cfcbd924afdbbd89c1a755
+        with:
+          context: ./
+          push: true
+          tags: ghcr.io/${{github.repository_owner}}/mendel-web:1.0.0
+          labels: ${{ steps.meta.outputs.labels }}
+          file: ./Mendel.Web/Dockerfile
+  deploy-container:
+    name: Deploy Mendel Web Container
+    needs: build-web
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - name: Excecute ssh commands to pull down repo and run docker compose
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{secrets.HOSTNAME}}
+          username: ${{secrets.DEPLOY_USER}}
+          key: ${{secrets.DEPLOY_SSH_KEY}}
+          script: |
+            rm -rf koishibot
+            gh repo clone koishibuh/mendel
+            docker login ghcr.io -u ${{github.actor}} --password ${{ secrets.GITHUB_TOKEN }}
+            cd mendel
+            cp docker-compose.yml /etc/docker-env && cd /etc/docker-env
+            docker compose down
+            docker compose pull
+            docker compose up -d
+            rm -rf docker-compose.yml
