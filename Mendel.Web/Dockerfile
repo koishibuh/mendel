@@ -16,10 +16,10 @@ COPY ["Mendel.Web/Mendel.Web.csproj", "Mendel.Web/"]
 RUN dotnet restore "./Mendel.Web/Mendel.Web.csproj"
 COPY . .
 WORKDIR "/src/Mendel.Web"
-RUN dotnet build "Mendel.Web.csproj" -c Release -o /app/build
+RUN dotnet build "./Mendel.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Mendel.Web.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Mendel.Web.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
