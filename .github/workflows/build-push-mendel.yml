@@ -62,7 +62,7 @@ jobs:
           username: ${{secrets.DEPLOY_USER}}
           key: ${{secrets.DEPLOY_SSH_KEY}}
           script: |
-            rm -rf koishibot
+            rm -rf mendel
             gh repo clone koishibuh/mendel
             docker login ghcr.io -u ${{github.actor}} --password ${{ secrets.GITHUB_TOKEN }}
             cd mendel
