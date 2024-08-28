@@ -4,7 +4,7 @@ services:
     container_name: "mendel-web"
     restart: unless-stopped
     image: ghcr.io/koishibuh/mendel-web:1.0.0
-    env_file:
-      - /etc/docker-env/.mendel-web-env
+#    env_file:
+#      - /etc/docker-env/.mendel-web-env
     ports:
       - 8786:8080
