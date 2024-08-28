@@ -1,0 +1,6 @@
+﻿services:
+  mendel.core:
+    image: mendel.core
+    build:
+      context: .
+      dockerfile: Mendel.Core/Dockerfile
