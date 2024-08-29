@@ -10,6 +10,7 @@
         <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
         <AssemblyVersion>1.0.0</AssemblyVersion>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>57c9b33a-04ff-42f0-86f4-bf820d303cfc</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -42,6 +43,10 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Mendel.Core\Mendel.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
     </ItemGroup>
 
 </Project>
