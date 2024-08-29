@@ -1,3 +1,4 @@
+using Mendel.Core.Common;
 using Mendel.Core.Configurations;
 using Mendel.Core.Exceptions;
 using Mendel.Core.Persistence;
@@ -12,8 +13,14 @@ public static class StartupExtensions
 	(this WebApplicationBuilder builder)
 	{
 		var debugMode = builder.Environment.IsDevelopment();
-
-		builder.Configuration.AddEnvironmentVariables();
+		if (debugMode)
+		{
+			builder.Configuration.AddUserSecrets<Program>();
+		}
+		else
+		{
+			builder.Configuration.AddEnvironmentVariables();
+		}
 
 		var settings = builder.Configuration.GetSection("Settings");
 		builder.Services.Configure<Settings>(settings);
@@ -21,12 +28,18 @@ public static class StartupExtensions
 		builder.Services.AddHttpClient("TheFinalOutpost", httpClient =>
 		httpClient.BaseAddress = new Uri("https://finaloutpost.net/api/v1/"));
 
-		builder.Services.AddSerilog();
+		builder.Services.AddSerilog((services, lc) => lc
+		.ReadFrom.Configuration(builder.Configuration)
+		.ReadFrom.Services(services)
+		//.Enrich.FromLogContext()
+		.WriteTo.Console());
+
+		builder.Services.AddAppServices();
 		builder.Services.AddPersistenceService(builder.Configuration);
 
 		builder.Services.AddControllers();
 
-		builder.Services.AddEndpointsApiExplorer();
+		// builder.Services.AddEndpointsApiExplorer();
 		builder.Services.AddSwaggerGen();
 
 		builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
@@ -45,7 +58,7 @@ public static class StartupExtensions
 
 		app.UseExceptionHandler();
 
-		app.UseHttpsRedirection();
+		// app.UseHttpsRedirection();
 		app.UseStaticFiles();
 
 		app.UseRouting();
