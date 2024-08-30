@@ -17,4 +17,10 @@
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Features\Review\Controllers\growingCreatureData.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

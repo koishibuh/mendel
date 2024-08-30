@@ -1,6 +1,8 @@
+using System.Text.Json;
 using MediatR;
 using Mendel.Core.Common;
 using Mendel.Core.Services.FinalOutpost;
+using Mendel.Core.Services.FinalOutpost.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mendel.Core.Features.Review.Controllers;
@@ -11,7 +13,7 @@ public class ImportGrowingCreaturesController : ApiControllerBase
 {
 	[HttpPost]
 	public async Task<ActionResult> ImportGrowingCreatures
-	([FromBody] ImportGrowingCreaturesQuery query)
+	([FromBody] ImportGrowingCreatureHandler query)
 	{
 		await Mediator.Send(query);
 		 return Ok();
@@ -26,6 +28,8 @@ IFinalOutpostService FinalOutpostService
 	public async Task Handle(ImportGrowingCreaturesQuery query, CancellationToken cancel)
 	{
 		var result = await FinalOutpostService.GetGrowingCreatures(query.ScientistName);
+		// add to database
+		// create vm for ui
 	}
 }
 
