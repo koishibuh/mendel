@@ -1,1 +1,13 @@
 @import './base.css';
+
+input[type=button], button {
+    @apply bg-[#aed284] p-2 rounded hover:bg-[#71a239];
+}
+
+input[type=text] {
+    @apply rounded p-2;
+}
+
+.rborder {
+    @apply rounded border-2 border-[#846f55]
+}
