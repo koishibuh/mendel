@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useReviewStore } from '@/review/review.store';
 import CreatureBox from '@/review/CreatureBox.vue';
 
 const store = useReviewStore();
 
-
 const scientistName = ref<string>('');
 
+const filterType = ref<string>('all');
 
+const filteredCreatures = computed(() => store.getFilteredCreatures(filterType.value));
 </script>
 
 <template>
@@ -22,13 +23,14 @@ const scientistName = ref<string>('');
     </div>
 
     <div class="w-full flex gap-2 p-2">
-      <button class="w-full">Growing</button>
-      <button class="w-full">Adults</button>
-      <button class="w-full">Both</button>
+      <button class="w-full" @click="filterType = 'growing'">Growing</button>
+      <button class="w-full" @click="filterType = 'adults'">Adults</button>
+      <button class="w-full" @click="filterType = 'all'">All</button>
     </div>
 
     <div class="rborder m-2 h-1/2">
-      <div>:)</div>
+      <div>{{filteredCreatures.length }}</div>
+      {{ filterType}}
     </div>
 
     <div class="m-2 flex gap-2">
@@ -36,8 +38,9 @@ const scientistName = ref<string>('');
       <button class="w-full">💾</button>
     </div>
 
+
     <div class="bg-white rborder m-2 flex p-2 gap-2">
-      <div v-for="(creature, index) in store.creatures" :key="index">
+      <div v-for="(creature, index) in filteredCreatures" :key="index">
         <CreatureBox :creature="creature" />
       </div>
     </div>
@@ -45,6 +48,8 @@ const scientistName = ref<string>('');
     <div class="m-2">
       <div class="h-4 bg-[#b25a7c] rounded"></div>
       <p class="text-center">Completion Bar</p>
+
+      <div id="windowSize"></div>
     </div>
   </div>
 </template>

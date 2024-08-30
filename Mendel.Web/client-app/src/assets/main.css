@@ -11,3 +11,12 @@ input[type=text] {
 .rborder {
     @apply rounded border-2 border-[#846f55]
 }
+
+#windowSize {
+    @apply text-center bg-red-500 after:content-['Less_640px']
+    sm:bg-orange-500 sm:after:content-['640px_Mobile_Sm']
+    md:bg-orange-500 md:after:content-['768px_Tablet_Md']
+    lg:bg-green-500 lg:after:content-['1024px_Desktop_Lg']
+    xl:bg-blue-500 xl:after:content-['1280px_Desktop_XL']
+    2xl:bg-purple-500 2xl:after:content-['1536px_Destop_2XL'];
+}
