@@ -1,0 +1,106 @@
+[
+  {
+    "creatureCode": "",
+    "portrait": "",
+    "favoriteCount": 0,
+    "age": 0,
+    "genes": "",
+    "viewed": false
+  },
+  {
+    "creatureCode": "ABCDE",
+    "portrait": "https://i.imgur.com/ecU0rbH.png",
+    "favoriteCount": 0,
+    "age": 0,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "FGHIJ",
+    "portrait": "https://i.imgur.com/UW5t2wm.png",
+    "favoriteCount": 0,
+    "age": 0,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "KLMNO",
+    "portrait": "https://i.imgur.com/uUS9jm7.png",
+    "favoriteCount": 0,
+    "age": 0,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "PQRST",
+    "portrait": "https://i.imgur.com/Vg92gQ9.png",
+    "favoriteCount": 0,
+    "age": 0,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "UVWXY",
+    "portrait": "https://i.imgur.com/XXSaHwV.png",
+    "favoriteCount": 2,
+    "age": 1,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "ZEABC",
+    "portrait": "https://i.imgur.com/UiQgRDl.png",
+    "favoriteCount": 5,
+    "age": 1,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "KOLHA",
+    "portrait": "https://i.imgur.com/Xj578kw.png",
+    "favoriteCount": 3,
+    "age": 1,
+    "genes": "Unknown",
+    "viewed": false
+  },
+  {
+    "creatureCode": "FGOIU",
+    "portrait": "https://i.imgur.com/kb6VYZ9.png",
+    "favoriteCount": 10,
+    "age": 1,
+    "viewed": false,
+    "genes": "Unknown"
+  },
+  {
+    "creatureCode": "0abt3",
+    "portrait": "https://i.imgur.com/Yiqgbuf.png",
+    "favoriteCount": 10,
+    "age": 2,
+    "genes": "Wings:AAbb, Body:aaBB, Bodymarking:AaBb, Wingmarking:AaBBCC",
+    "viewed": false
+  },
+  {
+    "creatureCode": "0Tovn",
+    "portrait": "https://i.imgur.com/QrNzods.png",
+    "favoriteCount": 8,
+    "age": 2,
+    "genes": "Body:aabb, Markings:aaBB, Fins:AAbb",
+    "viewed": false
+  },
+  {
+    "creatureCode": "ZAlZN",
+    "portrait": "https://i.imgur.com/rch4eko.png",
+    "favoriteCount": 13,
+    "age": 2,
+    "genes": "Body:aaBBCC, Marking:aabbcc, Feet:AABbCC, Pinto:AABbCC, Leopard:AaBbcc, Face:AaBBCc, Mane:aaBBCc, Horns:AABbCc, Wings:aaBbCc",
+    "viewed": false
+  },
+  {
+    "creatureCode": "cOYhu",
+    "portrait": "https://i.imgur.com/sFagx6P.png",
+    "favoriteCount": 10,
+    "age": 2,
+    "genes": " Body:AaBbCc, Patternb:AABbCC, Patterna:AaBbCc, Frontlegs:AaBbCc, Rearlegs:AabbCC, Rearmane:AAbbCC, Frontmane:AaBbCc, Head:AaBbCc, Eartufts:AABbCC, Eyes:aaBBCC, Tail:aaBb, Horns:aabb",
+    "viewed": false
+  }
+]
