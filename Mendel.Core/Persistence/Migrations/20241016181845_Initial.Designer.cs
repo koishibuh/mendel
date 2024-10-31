@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Mendel.Core.Persistence.Migrations
 {
     [DbContext(typeof(MendelDbContext))]
-    [Migration("20240829155417_Initial")]
+    [Migration("20241016181845_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -25,69 +25,7 @@ namespace Mendel.Core.Persistence.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.Creature", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTimeOffset>("AcquiredTimestamp")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Code")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("GrowthStage")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("IsStunted")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<int>("ScientistId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ScientistId");
-
-                    b.ToTable("Creatures", (string)null);
-                });
-
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.CreatureGenotype", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CreatureId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("GenotypeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatureId");
-
-                    b.HasIndex("GenotypeId");
-
-                    b.ToTable("CreatureGenotypes", (string)null);
-                });
-
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.Genotype", b =>
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Gene", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -114,10 +52,10 @@ namespace Mendel.Core.Persistence.Migrations
 
                     b.HasIndex("SpeciesId");
 
-                    b.ToTable("Genotypes", (string)null);
+                    b.ToTable("Genes", (string)null);
                 });
 
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.Scientist", b =>
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.GeneSet", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -125,13 +63,82 @@ namespace Mendel.Core.Persistence.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<int>("GeneId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SetId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GeneId");
+
+                    b.HasIndex("SetId");
+
+                    b.ToTable("GeneSets", (string)null);
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.GeneSetImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("GeneSetId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ImageId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GeneSetId");
+
+                    b.ToTable("ImageGeneSets", (string)null);
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Age")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Hash")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Sex")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Url")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Scientists", (string)null);
+                    b.ToTable("Images", (string)null);
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Set", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sets", (string)null);
                 });
 
             modelBuilder.Entity("Mendel.Core.Persistence.Models.Species", b =>
@@ -143,48 +150,27 @@ namespace Mendel.Core.Persistence.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CapsuleImage")
-                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Event")
                         .HasColumnType("longtext");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<DateTimeOffset>("ReleaseDate")
+                        .HasColumnType("datetime(6)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Species", (string)null);
                 });
 
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.Creature", b =>
-                {
-                    b.HasOne("Mendel.Core.Persistence.Models.Scientist", "Scientist")
-                        .WithMany("Creatures")
-                        .HasForeignKey("ScientistId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Scientist");
-                });
-
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.CreatureGenotype", b =>
-                {
-                    b.HasOne("Mendel.Core.Persistence.Models.Creature", null)
-                        .WithMany()
-                        .HasForeignKey("CreatureId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Mendel.Core.Persistence.Models.Genotype", null)
-                        .WithMany()
-                        .HasForeignKey("GenotypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.Genotype", b =>
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Gene", b =>
                 {
                     b.HasOne("Mendel.Core.Persistence.Models.Species", "Species")
-                        .WithMany("Genotypes")
+                        .WithMany("Genes")
                         .HasForeignKey("SpeciesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -192,14 +178,67 @@ namespace Mendel.Core.Persistence.Migrations
                     b.Navigation("Species");
                 });
 
-            modelBuilder.Entity("Mendel.Core.Persistence.Models.Scientist", b =>
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.GeneSet", b =>
                 {
-                    b.Navigation("Creatures");
+                    b.HasOne("Mendel.Core.Persistence.Models.Gene", "Gene")
+                        .WithMany("GeneSets")
+                        .HasForeignKey("GeneId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Mendel.Core.Persistence.Models.Set", "Set")
+                        .WithMany("GeneSets")
+                        .HasForeignKey("SetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Gene");
+
+                    b.Navigation("Set");
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.GeneSetImage", b =>
+                {
+                    b.HasOne("Mendel.Core.Persistence.Models.GeneSet", "GeneSet")
+                        .WithMany("GeneSetImages")
+                        .HasForeignKey("GeneSetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Mendel.Core.Persistence.Models.Image", "Image")
+                        .WithMany("GeneSetImages")
+                        .HasForeignKey("GeneSetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("GeneSet");
+
+                    b.Navigation("Image");
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Gene", b =>
+                {
+                    b.Navigation("GeneSets");
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.GeneSet", b =>
+                {
+                    b.Navigation("GeneSetImages");
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Image", b =>
+                {
+                    b.Navigation("GeneSetImages");
+                });
+
+            modelBuilder.Entity("Mendel.Core.Persistence.Models.Set", b =>
+                {
+                    b.Navigation("GeneSets");
                 });
 
             modelBuilder.Entity("Mendel.Core.Persistence.Models.Species", b =>
                 {
-                    b.Navigation("Genotypes");
+                    b.Navigation("Genes");
                 });
 #pragma warning restore 612, 618
         }

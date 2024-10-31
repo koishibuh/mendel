@@ -1,0 +1,470 @@
+{
+  "speciesId": 1,
+  "speciesName": "Abomena Pahidermo",
+  "genes": [
+    {
+      "id": 1,
+      "trait": "Body",
+      "alleles": "AA",
+      "description": "Blue (Purple Feet)"
+    },
+    {
+      "id": 2,
+      "trait": "Body",
+      "alleles": "Aa",
+      "description": "Red (Blue Feet)"
+    },
+    {
+      "id": 3,
+      "trait": "Body",
+      "alleles": "aa",
+      "description": "Green (Orange Feet)"
+    },
+    {
+      "id": 4,
+      "trait": "Fins",
+      "alleles": "AA",
+      "description": "Blue"
+    },
+    {
+      "id": 5,
+      "trait": "Fins",
+      "alleles": "Aa",
+      "description": "Orange"
+    },
+    {
+      "id": 6,
+      "trait": "Fins",
+      "alleles": "aa",
+      "description": "Green"
+    },
+    {
+      "id": 7,
+      "trait": "Head",
+      "alleles": "AA",
+      "description": "Green"
+    },
+    {
+      "id": 8,
+      "trait": "Head",
+      "alleles": "Aa",
+      "description": "Purple"
+    },
+    {
+      "id": 9,
+      "trait": "Head",
+      "alleles": "aa",
+      "description": "Orange"
+    },
+    {
+      "id": 10,
+      "trait": "Unknown",
+      "alleles": "Unknown",
+      "description": "Unknown"
+    }
+  ],
+  "images": [
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 730,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728587014/o3ekgnvcmqoeawccaprq.png",
+      "adultImageId": 1,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487544/u1cam5ad6bomqmjoz4lg.png",
+      "geneIdSets": [
+        [
+          1,
+          4,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 731,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728587792/gue3mbx9bmrt4ezowtr4.png",
+      "adultImageId": 2,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487558/yofg203jcq1zn7b9bper.png",
+      "geneIdSets": [
+        [
+          1,
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 732,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728588490/bc8yykniinqaucq3ikoh.png",
+      "adultImageId": 3,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487560/xcoznrovajcswokuvhoe.png",
+      "geneIdSets": [
+        [
+          1,
+          4,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 733,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728588509/ea9urpavnalc0q8sfcf5.png",
+      "adultImageId": 4,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487562/tkcu4pbvqfl8dilldyhf.png",
+      "geneIdSets": [
+        [
+          1,
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 734,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589863/iggjyjqat0noxsqlgd8a.png",
+      "adultImageId": 5,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487564/qicoono97xmoahevc7mc.png",
+      "geneIdSets": [
+        [
+          1,
+          5,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 735,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589885/xh15o54hs78meytultbg.png",
+      "adultImageId": 6,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487566/o0xzsui3ozqyysocizmb.png",
+      "geneIdSets": [
+        [
+          1,
+          5,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 736,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589885/gs2pytp4ppw8p2xecmim.png",
+      "adultImageId": 7,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487568/mrcclejbhhdrddkjjpvf.png",
+      "geneIdSets": [
+        [
+          1,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 737,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589886/bjnzdfpqx15kvcjstmip.png",
+      "adultImageId": 8,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487571/xxdcigpth7vrpewgehru.png",
+      "geneIdSets": [
+        [
+          1,
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 738,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589886/mbon3f54h1wynjzc699q.png",
+      "adultImageId": 9,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487572/xiqoyjb8gurrh7etmsuv.png",
+      "geneIdSets": [
+        [
+          1,
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 739,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589887/wgezledicf46dsilmdbh.png",
+      "adultImageId": 10,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487574/hztzo462ekctkzmfu4qm.png",
+      "geneIdSets": [
+        [
+          2,
+          4,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 740,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589887/n0gzwwhmofns3quofrzh.png",
+      "adultImageId": 11,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487576/ummiz6f894uvkrv0x6z4.png",
+      "geneIdSets": [
+        [
+          2,
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 741,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589888/iycqrfzhbbrwcnidoxbs.png",
+      "adultImageId": 12,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487578/wriqzbqlzwii7nxdsp5m.png",
+      "geneIdSets": [
+        [
+          2,
+          4,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 742,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589888/rk7qlay14hmwkdlcokpk.png",
+      "adultImageId": 13,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487580/wbwxgfbdjexal5dcpqop.png",
+      "geneIdSets": [
+        [
+          2,
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 743,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589889/qetg3dkcncvl9pu1o3op.png",
+      "adultImageId": 14,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487582/w7simpbgj143hkrqvuzb.png",
+      "geneIdSets": [
+        [
+          2,
+          5,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 744,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589889/wk59zpfbvoxjkogv6lik.png",
+      "adultImageId": 15,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487584/tu7pn4tngxf1hpqxzsdv.png",
+      "geneIdSets": [
+        [
+          2,
+          5,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 745,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589890/ok9zvtequyvpvvnhmnfw.png",
+      "adultImageId": 16,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487586/ut625eeboprolqty3ltz.png",
+      "geneIdSets": [
+        [
+          2,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 746,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589890/lm672zijjzah51lq56z4.png",
+      "adultImageId": 17,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487588/vmvlu1dvsyraudmo1xec.png",
+      "geneIdSets": [
+        [
+          2,
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 747,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589891/wh2njv4jkjn7oopnftn6.png",
+      "adultImageId": 18,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487590/y21hnmxbszjpcdjgk6ny.png",
+      "geneIdSets": [
+        [
+          2,
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 748,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589892/zjnfnudvc7dj1rwyy8a3.png",
+      "adultImageId": 19,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487592/q2tc5rndaakmew0q5s34.png",
+      "geneIdSets": [
+        [
+          3,
+          4,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 749,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589892/nukrq9pn9zuq9zmhkhwe.png",
+      "adultImageId": 20,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487593/knsmo0pprovwpdp8essr.png",
+      "geneIdSets": [
+        [
+          3,
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 750,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589893/sjcjitmtb78uqpue9un9.png",
+      "adultImageId": 21,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487595/xlwleukjjcrcnxj57tsp.png",
+      "geneIdSets": [
+        [
+          3,
+          4,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 751,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589893/vsre33zhlmjn6w9cphpr.png",
+      "adultImageId": 22,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487597/vvygt89rhlwuhkyutcoj.png",
+      "geneIdSets": [
+        [
+          3,
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 752,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589894/vzoryhsi9qrpqrjm2b5f.png",
+      "adultImageId": 23,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487599/fjzsyakqudi30bietlqa.png",
+      "geneIdSets": [
+        [
+          3,
+          5,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 753,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589894/qimfqwaeo9gu37ouvewj.png",
+      "adultImageId": 24,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487601/h67uvyko0kzsxcwpopjn.png",
+      "geneIdSets": [
+        [
+          3,
+          5,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 754,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589894/iacvcyhooam5po4lmbod.png",
+      "adultImageId": 25,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487603/getqp6bswfhychpgvyoy.png",
+      "geneIdSets": [
+        [
+          3,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 755,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589895/aqbspbwldnff2ewf71ju.png",
+      "adultImageId": 26,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487605/rfsnizl10v2yactafdkb.png",
+      "geneIdSets": [
+        [
+          3,
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 756,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728589895/hijqfjeib7jlmnsowjd0.png",
+      "adultImageId": 27,
+      "adultUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728487607/jn2ld7bsfwrwrqjmz61d.png",
+      "geneIdSets": [
+        [
+          3,
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "sex": "Unisex",
+      "juvenileImageId": 1020,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728590869/xhbse5msqof8e3zs9elp.png",
+      "adultImageId": null,
+      "adultUrl": null,
+      "geneIdSets": [
+        [
+          10
+        ]
+      ]
+    },
+    {
+      "sex": "Male",
+      "juvenileImageId": 1079,
+      "juvenileUrl": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728591040/g9entgor4kh1z2nc1zyp.png",
+      "adultImageId": null,
+      "adultUrl": null,
+      "geneIdSets": [
+        [
+          10
+        ]
+      ]
+    }
+  ]
+}

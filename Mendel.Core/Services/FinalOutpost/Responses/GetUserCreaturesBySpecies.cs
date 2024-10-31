@@ -1,9 +1,9 @@
+using Mendel.Core.Features.Checklist.Controllers;
 using System.Text.Json.Serialization;
-
 namespace Mendel.Core.Services.FinalOutpost.Responses;
 
 /*══════════════════【 RESPONSE 】══════════════════*/
-public class GetGrowingCreatures
+public class GetUserCreaturesBySpecies
 {
 	[JsonPropertyName("error")]
 	public bool Error { get; set; }
@@ -13,11 +13,10 @@ public class GetGrowingCreatures
 	public string? ErrorCode { get; set; }
 
 	[JsonPropertyName("creatures")]
-	public List<GrowingCreature>? Creatures { get; set; }
+	public List<CreatureDto>? Creatures { get; set; }
 }
 
-
-public class GrowingCreature
+public class CreatureDto
 {
 	[JsonPropertyName("error")]
 	public bool Error { get; set; }
@@ -46,11 +45,28 @@ public class GrowingCreature
 	public bool Stunted { get; set; }
 
 	[JsonPropertyName("breedName")]
-	public string? BreedName { get; set; }
+	public string? SpeciesName { get; set; }
 
 	[JsonPropertyName("genetics")]
-	public string? Genetics { get; set; }
+	[JsonConverter(typeof(GeneticsConverter))]
+	public List<GenotypeDto>? Genetics { get; set; }
 
 	[JsonPropertyName("gender")]
 	public string? Gender { get; set; }
+}
+
+public static class UserCreatureExtensions
+{
+	public static List<ChecklistCreatureVm> CreateVm(this List<CreatureDto> creatures) =>
+		creatures
+			.Select(x => new ChecklistCreatureVm(
+				x.Code, x.Name, x.GrowthLevel, x.Stunted,
+				x.SpeciesName, x.Genetics, x.Gender))
+			.ToList();
+}
+
+public class Genetics
+{
+	public string Name { get; set; }
+	public string Allele { get; set; }
 }

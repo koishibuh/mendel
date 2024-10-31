@@ -3,14 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Mendel.Core.Persistence;
 
-public class MendelDbContext : DbContext
+public class MendelDbContext(DbContextOptions<MendelDbContext> options) : DbContext(options)
 {
-	public MendelDbContext(DbContextOptions<MendelDbContext> options) : base(options){}
-
-	public DbSet<Creature> Creatures => Set<Creature>();
-	public DbSet<Genotype> Genotypes => Set<Genotype>();
-	public DbSet<Scientist> Scientists => Set<Scientist>();
+	public DbSet<Gene> Genes => Set<Gene>();
+	public DbSet<Set> Sets => Set<Set>();
+	public DbSet<Image> Images => Set<Image>();
 	public DbSet<Species> Species => Set<Species>();
+	public DbSet<GeneSet> GeneSets => Set<GeneSet>();
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{

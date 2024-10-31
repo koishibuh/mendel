@@ -7,29 +7,37 @@ export const useReviewStore = defineStore('reviewStore', () => {
 
   const creatures = ref<IGrowingCreature[]>(reviewCreatures);
 
+  const markAsViewed = (code: string) => {
+  const creature = creatures.value.find((x) => x.creatureCode === code)
+    if (creature){
+      creature.viewed = true;
+    }
+  };
+
+  const viewedCount = computed(() => {
+    return creatures.value.filter((x) => x.viewed === true).length;
+  })
+
   const getCount = computed(() => {
     return creatures.value.length;
   });
 
-  const getGrowing = computed(() => {
-    return creatures.value.filter(creature => creature.age !== 2);
-  })
 
-  const getAdults = computed(() => {
+  const getFilteredCreatures = (group: string) => {
+    if (group === "all") {
+    return creatures.value;
+    } else if (group === "adults") {
+      return creatures.value.filter(creature => creature.age === 2)
+    }  else {
     return creatures.value.filter(creature => creature.age !== 2);
-  })
-
-  const getFilteredCreatures = (group: string | null) => {
-    if (!group || group == "all") return creatures.value;
-    if (group === "adults") return creatures.value.filter(creature => creature.age === 2);
-    return creatures.value.filter(creature => creature.age !== 2);
+    }
   }
 
   return {
     creatures,
+    markAsViewed,
     getCount,
-    getGrowing,
-    getAdults,
-    getFilteredCreatures
+    getFilteredCreatures,
+    viewedCount
   }
 })

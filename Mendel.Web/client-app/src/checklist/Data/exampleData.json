@@ -1,0 +1,222 @@
+[
+  {
+    "code": "3dj5d",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "AA"
+      },
+      {
+        "description": "Legs",
+        "gene": "AA"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "Aa"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "DUaLW",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "AA"
+      },
+      {
+        "description": "Legs",
+        "gene": "Aa"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "Aa"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "E8tSa",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "Aa"
+      },
+      {
+        "description": "Legs",
+        "gene": "aa"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "aa"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "Enuow",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "aa"
+      },
+      {
+        "description": "Legs",
+        "gene": "Aa"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "Aa"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "IluVX",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "Aa"
+      },
+      {
+        "description": "Legs",
+        "gene": "AA"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "AA"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "bOSBX",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "Aa"
+      },
+      {
+        "description": "Legs",
+        "gene": "AA"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "AA"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "ex93d",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "aa"
+      },
+      {
+        "description": "Legs",
+        "gene": "AA"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "Aa"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "rJlUX",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "AA"
+      },
+      {
+        "description": "Legs",
+        "gene": "AA"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "AA"
+      }
+    ],
+    "gender": "male"
+  },
+  {
+    "code": "KqPLR",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "AA"
+      },
+      {
+        "description": "Legs",
+        "gene": "aa"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "Aa"
+      }
+    ],
+    "gender": "female"
+  },
+  {
+    "code": "gSaiG",
+    "name": "Unnamed",
+    "growthLevel": 3,
+    "stunted": false,
+    "speciesName": "Brila Ornamo",
+    "genetics": [
+      {
+        "description": "Body",
+        "gene": "AA"
+      },
+      {
+        "description": "Legs",
+        "gene": "AA"
+      },
+      {
+        "description": "Mandibles",
+        "gene": "Aa"
+      }
+    ],
+    "gender": "female"
+  }
+]

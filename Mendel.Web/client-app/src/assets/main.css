@@ -1,11 +1,16 @@
 @import './base.css';
 
-input[type=button], button {
-    @apply bg-[#aed284] p-2 rounded hover:bg-[#71a239];
+body {
+    background-image: url('public/20240414-subtlepatterns-hexellence.png');
+    background-attachment: fixed;
+}
+
+input[type=button], button, .button {
+    @apply bg-[#ffad90] p-2 rounded hover:bg-[#ffbfbc] border border-black;
 }
 
 input[type=text] {
-    @apply rounded p-2;
+    @apply rounded p-2 border border-black;
 }
 
 .rborder {

@@ -1,0 +1,326 @@
+[
+  {
+    "portraitId": 1,
+    "geneIds": [
+      1,
+      4,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 2,
+    "geneIds": [
+      1,
+      4,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 3,
+    "geneIds": [
+      1,
+      4,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 4,
+    "geneIds": [
+      1,
+      5,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 5,
+    "geneIds": [
+      1,
+      5,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 6,
+    "geneIds": [
+      1,
+      5,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 7,
+    "geneIds": [
+      1,
+      6,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 8,
+    "geneIds": [
+      1,
+      6,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 9,
+    "geneIds": [
+      1,
+      6,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 10,
+    "geneIds": [
+      2,
+      4,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 11,
+    "geneIds": [
+      2,
+      4,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 12,
+    "geneIds": [
+      2,
+      4,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 13,
+    "geneIds": [
+      2,
+      5,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 14,
+    "geneIds": [
+      2,
+      5,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 15,
+    "geneIds": [
+      2,
+      5,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 16,
+    "geneIds": [
+      2,
+      6,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 17,
+    "geneIds": [
+      2,
+      6,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 18,
+    "geneIds": [
+      2,
+      6,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 19,
+    "geneIds": [
+      3,
+      4,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 20,
+    "geneIds": [
+      3,
+      4,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 21,
+    "geneIds": [
+      3,
+      4,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 22,
+    "geneIds": [
+      3,
+      5,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 23,
+    "geneIds": [
+      3,
+      5,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 24,
+    "geneIds": [
+      3,
+      5,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 25,
+    "geneIds": [
+      3,
+      6,
+      7
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 26,
+    "geneIds": [
+      3,
+      6,
+      8
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  },
+  {
+    "portraitId": 27,
+    "geneIds": [
+      3,
+      6,
+      9
+    ],
+    "juvenileFemaleUrl": null,
+    "juvenileMaleUrl": null,
+    "adultMaleUrl": null,
+    "adultFemaleUrl": null
+  }
+]

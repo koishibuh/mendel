@@ -1,0 +1,47 @@
+[
+  {
+    "speciesName": "Arba Brakumo",
+    "creatures": [
+      {
+        "code": "ABCDE",
+        "name": "Unnamed",
+        "growthLevel": 3,
+        "stunted": false,
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "code": "BCDEF",
+        "name": "Unnamed",
+        "growthLevel": 3,
+        "stunted": false,
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "code": "CDEFG",
+        "name": "Unnamed",
+        "growthLevel": 2,
+        "stunted": false,
+        "gender": "male",
+        "geneIds": null
+      },
+      {
+        "code": "DEFGH",
+        "name": "Unnamed",
+        "growthLevel": 1,
+        "stunted": false,
+        "gender": "unknown",
+        "geneIds": null
+      }
+    ]
+  }
+]

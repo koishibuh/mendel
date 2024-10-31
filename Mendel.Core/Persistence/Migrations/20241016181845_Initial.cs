@@ -16,17 +16,36 @@ namespace Mendel.Core.Persistence.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Scientists",
+                name: "Images",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(type: "longtext", nullable: false)
+                    Hash = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Url = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Sex = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Age = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Scientists", x => x.Id);
+                    table.PrimaryKey("PK_Images", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Sets",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Sets", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -38,8 +57,11 @@ namespace Mendel.Core.Persistence.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    CapsuleImage = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    CapsuleImage = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Event = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ReleaseDate = table.Column<DateTimeOffset>(type: "datetime(6)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,53 +70,24 @@ namespace Mendel.Core.Persistence.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Creatures",
+                name: "Genes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Code = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    ImageUrl = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    AcquiredTimestamp = table.Column<DateTimeOffset>(type: "datetime(6)", nullable: false),
-                    GrowthStage = table.Column<int>(type: "int", nullable: false),
-                    IsStunted = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    Gender = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    ScientistId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Creatures", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Creatures_Scientists_ScientistId",
-                        column: x => x.ScientistId,
-                        principalTable: "Scientists",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
-                name: "Genotypes",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    SpeciesId = table.Column<int>(type: "int", nullable: false),
                     Trait = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Alleles = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Description = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    SpeciesId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Genotypes", x => x.Id);
+                    table.PrimaryKey("PK_Genes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Genotypes_Species_SpeciesId",
+                        name: "FK_Genes_Species_SpeciesId",
                         column: x => x.SpeciesId,
                         principalTable: "Species",
                         principalColumn: "Id",
@@ -103,67 +96,97 @@ namespace Mendel.Core.Persistence.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "CreatureGenotypes",
+                name: "GeneSets",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatureId = table.Column<int>(type: "int", nullable: false),
-                    GenotypeId = table.Column<int>(type: "int", nullable: false)
+                    GeneId = table.Column<int>(type: "int", nullable: false),
+                    SetId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CreatureGenotypes", x => x.Id);
+                    table.PrimaryKey("PK_GeneSets", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CreatureGenotypes_Creatures_CreatureId",
-                        column: x => x.CreatureId,
-                        principalTable: "Creatures",
+                        name: "FK_GeneSets_Genes_GeneId",
+                        column: x => x.GeneId,
+                        principalTable: "Genes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CreatureGenotypes_Genotypes_GenotypeId",
-                        column: x => x.GenotypeId,
-                        principalTable: "Genotypes",
+                        name: "FK_GeneSets_Sets_SetId",
+                        column: x => x.SetId,
+                        principalTable: "Sets",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "ImageGeneSets",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    GeneSetId = table.Column<int>(type: "int", nullable: false),
+                    ImageId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ImageGeneSets", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ImageGeneSets_GeneSets_GeneSetId",
+                        column: x => x.GeneSetId,
+                        principalTable: "GeneSets",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ImageGeneSets_Images_GeneSetId",
+                        column: x => x.GeneSetId,
+                        principalTable: "Images",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CreatureGenotypes_CreatureId",
-                table: "CreatureGenotypes",
-                column: "CreatureId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CreatureGenotypes_GenotypeId",
-                table: "CreatureGenotypes",
-                column: "GenotypeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Creatures_ScientistId",
-                table: "Creatures",
-                column: "ScientistId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Genotypes_SpeciesId",
-                table: "Genotypes",
+                name: "IX_Genes_SpeciesId",
+                table: "Genes",
                 column: "SpeciesId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_GeneSets_GeneId",
+                table: "GeneSets",
+                column: "GeneId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_GeneSets_SetId",
+                table: "GeneSets",
+                column: "SetId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ImageGeneSets_GeneSetId",
+                table: "ImageGeneSets",
+                column: "GeneSetId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CreatureGenotypes");
+                name: "ImageGeneSets");
 
             migrationBuilder.DropTable(
-                name: "Creatures");
+                name: "GeneSets");
 
             migrationBuilder.DropTable(
-                name: "Genotypes");
+                name: "Images");
 
             migrationBuilder.DropTable(
-                name: "Scientists");
+                name: "Genes");
+
+            migrationBuilder.DropTable(
+                name: "Sets");
 
             migrationBuilder.DropTable(
                 name: "Species");

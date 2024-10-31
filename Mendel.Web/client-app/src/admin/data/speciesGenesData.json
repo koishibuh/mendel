@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "trait": "Body",
+    "alleles": "AA",
+    "description": "Blue (Purple Feet)"
+  },
+  {
+    "id": 2,
+    "trait": "Body",
+    "alleles": "Aa",
+    "description": "Red (Blue Feet)"
+  },
+  {
+    "id": 3,
+    "trait": "Body",
+    "alleles": "aa",
+    "description": "Green (Orange Feet)"
+  },
+  {
+    "id": 4,
+    "trait": "Fins",
+    "alleles": "AA",
+    "description": "Blue"
+  },
+  {
+    "id": 5,
+    "trait": "Fins",
+    "alleles": "Aa",
+    "description": "Orange"
+  },
+  {
+    "id": 6,
+    "trait": "Fins",
+    "alleles": "aa",
+    "description": "Green"
+  },
+  {
+    "id": 7,
+    "trait": "Head",
+    "alleles": "AA",
+    "description": "Green"
+  },
+  {
+    "id": 8,
+    "trait": "Head",
+    "alleles": "Aa",
+    "description": "Purple"
+  },
+  {
+    "id": 9,
+    "trait": "Head",
+    "alleles": "aa",
+    "description": "Orange"
+  },
+  {
+    "id": 10,
+    "trait": "Unknown",
+    "alleles": "Unknown",
+    "description": "Unknown"
+  }
+]

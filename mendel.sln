@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mendel.Web", "Mendel.Web\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mendel.Core", "Mendel.Core\Mendel.Core.csproj", "{90D352E3-D398-479B-87DF-85224FAC1FFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mendel.XTest", "Mendel.XTest\Mendel.XTest.csproj", "{CC3552BE-A6C8-4B08-BAB6-2C954ADBCAE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,5 +22,9 @@ Global
 		{90D352E3-D398-479B-87DF-85224FAC1FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D352E3-D398-479B-87DF-85224FAC1FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D352E3-D398-479B-87DF-85224FAC1FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3552BE-A6C8-4B08-BAB6-2C954ADBCAE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3552BE-A6C8-4B08-BAB6-2C954ADBCAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3552BE-A6C8-4B08-BAB6-2C954ADBCAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3552BE-A6C8-4B08-BAB6-2C954ADBCAE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

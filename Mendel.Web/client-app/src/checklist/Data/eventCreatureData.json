@@ -1,0 +1,1691 @@
+[
+  {
+    "speciesName": "Arba Brakumo",
+    "event": "Winter Solstice",
+    "capsuleUrl": "https://res.cloudinary.com/dqstgihcr/image/upload/v1714922412/ArbaBrakumo-Capsule.png",
+    "genes": [
+      {
+        "id": 21,
+        "trait": "Body",
+        "alleles": "AA",
+        "description": "Bandicoot"
+      },
+      {
+        "id": 22,
+        "trait": "Body",
+        "alleles": "Aa",
+        "description": "Sugar Glider"
+      },
+      {
+        "id": 23,
+        "trait": "Body",
+        "alleles": "aa",
+        "description": "Frost"
+      },
+      {
+        "id": 24,
+        "trait": "Gloves",
+        "alleles": "AA",
+        "description": "Small"
+      },
+      {
+        "id": 25,
+        "trait": "Gloves",
+        "alleles": "Aa",
+        "description": "None"
+      },
+      {
+        "id": 26,
+        "trait": "Gloves",
+        "alleles": "aa",
+        "description": "Large"
+      },
+      {
+        "id": 27,
+        "trait": "Fur",
+        "alleles": "AA",
+        "description": "Medium"
+      },
+      {
+        "id": 28,
+        "trait": "Fur",
+        "alleles": "Aa",
+        "description": "Short"
+      },
+      {
+        "id": 29,
+        "trait": "Fur",
+        "alleles": "aa",
+        "description": "Long"
+      },
+      {
+        "id": 30,
+        "trait": "Unknown",
+        "alleles": "Unknown",
+        "description": "Unknown"
+      }
+    ],
+    "portraits": [
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346025/ArbaBrakumo_Body-1-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346027/ArbaBrakumo_Body-1-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346029/ArbaBrakumo_Body-1-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346031/ArbaBrakumo_Body-1-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346033/ArbaBrakumo_Body-1-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346035/ArbaBrakumo_Body-1-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346037/ArbaBrakumo_Body-1-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346039/ArbaBrakumo_Body-1-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346041/ArbaBrakumo_Body-1-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346088/ArbaBrakumo_Body-1-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346090/ArbaBrakumo_Body-1-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346092/ArbaBrakumo_Body-1-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346094/ArbaBrakumo_Body-1-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346096/ArbaBrakumo_Body-1-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346098/ArbaBrakumo_Body-1-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346100/ArbaBrakumo_Body-1-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346102/ArbaBrakumo_Body-1-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346104/ArbaBrakumo_Body-1-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346043/ArbaBrakumo_Body-2-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346045/ArbaBrakumo_Body-2-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346046/ArbaBrakumo_Body-2-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346048/ArbaBrakumo_Body-2-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346050/ArbaBrakumo_Body-2-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346052/ArbaBrakumo_Body-2-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346054/ArbaBrakumo_Body-2-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346057/ArbaBrakumo_Body-2-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346058/ArbaBrakumo_Body-2-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346107/ArbaBrakumo_Body-2-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346109/ArbaBrakumo_Body-2-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346110/ArbaBrakumo_Body-2-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346113/ArbaBrakumo_Body-2-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346114/ArbaBrakumo_Body-2-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346116/ArbaBrakumo_Body-2-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346118/ArbaBrakumo_Body-2-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346121/ArbaBrakumo_Body-2-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346123/ArbaBrakumo_Body-2-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346060/ArbaBrakumo_Body-3-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346062/ArbaBrakumo_Body-3-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346064/ArbaBrakumo_Body-3-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346066/ArbaBrakumo_Body-3-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346068/ArbaBrakumo_Body-3-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346069/ArbaBrakumo_Body-3-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346071/ArbaBrakumo_Body-3-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346073/ArbaBrakumo_Body-3-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346075/ArbaBrakumo_Body-3-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346125/ArbaBrakumo_Body-3-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346127/ArbaBrakumo_Body-3-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346129/ArbaBrakumo_Body-3-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346131/ArbaBrakumo_Body-3-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346133/ArbaBrakumo_Body-3-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346135/ArbaBrakumo_Body-3-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346137/ArbaBrakumo_Body-3-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346139/ArbaBrakumo_Body-3-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346140/ArbaBrakumo_Body-3-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346025/ArbaBrakumo_Body-1-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346027/ArbaBrakumo_Body-1-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346029/ArbaBrakumo_Body-1-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346043/ArbaBrakumo_Body-2-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346045/ArbaBrakumo_Body-2-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346046/ArbaBrakumo_Body-2-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346060/ArbaBrakumo_Body-3-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346062/ArbaBrakumo_Body-3-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346064/ArbaBrakumo_Body-3-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346088/ArbaBrakumo_Body-1-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346090/ArbaBrakumo_Body-1-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346092/ArbaBrakumo_Body-1-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346107/ArbaBrakumo_Body-2-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346109/ArbaBrakumo_Body-2-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346110/ArbaBrakumo_Body-2-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346125/ArbaBrakumo_Body-3-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346127/ArbaBrakumo_Body-3-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346129/ArbaBrakumo_Body-3-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346031/ArbaBrakumo_Body-1-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346033/ArbaBrakumo_Body-1-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346035/ArbaBrakumo_Body-1-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346048/ArbaBrakumo_Body-2-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346050/ArbaBrakumo_Body-2-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346052/ArbaBrakumo_Body-2-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346066/ArbaBrakumo_Body-3-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346068/ArbaBrakumo_Body-3-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346069/ArbaBrakumo_Body-3-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346094/ArbaBrakumo_Body-1-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346096/ArbaBrakumo_Body-1-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346098/ArbaBrakumo_Body-1-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346113/ArbaBrakumo_Body-2-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346114/ArbaBrakumo_Body-2-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346116/ArbaBrakumo_Body-2-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346131/ArbaBrakumo_Body-3-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346133/ArbaBrakumo_Body-3-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346135/ArbaBrakumo_Body-3-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346037/ArbaBrakumo_Body-1-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346039/ArbaBrakumo_Body-1-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346041/ArbaBrakumo_Body-1-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346054/ArbaBrakumo_Body-2-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346057/ArbaBrakumo_Body-2-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346058/ArbaBrakumo_Body-2-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346071/ArbaBrakumo_Body-3-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346073/ArbaBrakumo_Body-3-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346075/ArbaBrakumo_Body-3-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346100/ArbaBrakumo_Body-1-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346102/ArbaBrakumo_Body-1-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346104/ArbaBrakumo_Body-1-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346118/ArbaBrakumo_Body-2-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346121/ArbaBrakumo_Body-2-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346123/ArbaBrakumo_Body-2-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346137/ArbaBrakumo_Body-3-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346139/ArbaBrakumo_Body-3-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346140/ArbaBrakumo_Body-3-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346025/ArbaBrakumo_Body-1-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346031/ArbaBrakumo_Body-1-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346037/ArbaBrakumo_Body-1-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346043/ArbaBrakumo_Body-2-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346048/ArbaBrakumo_Body-2-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346054/ArbaBrakumo_Body-2-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346060/ArbaBrakumo_Body-3-Gloves-1-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346066/ArbaBrakumo_Body-3-Gloves-2-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346071/ArbaBrakumo_Body-3-Gloves-3-Fur-1_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346088/ArbaBrakumo_Body-1-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346094/ArbaBrakumo_Body-1-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346100/ArbaBrakumo_Body-1-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346107/ArbaBrakumo_Body-2-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346113/ArbaBrakumo_Body-2-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346118/ArbaBrakumo_Body-2-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346125/ArbaBrakumo_Body-3-Gloves-1-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346131/ArbaBrakumo_Body-3-Gloves-2-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346137/ArbaBrakumo_Body-3-Gloves-3-Fur-1_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          27
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346027/ArbaBrakumo_Body-1-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346033/ArbaBrakumo_Body-1-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346039/ArbaBrakumo_Body-1-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346045/ArbaBrakumo_Body-2-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346050/ArbaBrakumo_Body-2-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346057/ArbaBrakumo_Body-2-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346062/ArbaBrakumo_Body-3-Gloves-1-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346068/ArbaBrakumo_Body-3-Gloves-2-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346073/ArbaBrakumo_Body-3-Gloves-3-Fur-2_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346090/ArbaBrakumo_Body-1-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346096/ArbaBrakumo_Body-1-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346102/ArbaBrakumo_Body-1-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346109/ArbaBrakumo_Body-2-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346114/ArbaBrakumo_Body-2-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346121/ArbaBrakumo_Body-2-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346127/ArbaBrakumo_Body-3-Gloves-1-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346133/ArbaBrakumo_Body-3-Gloves-2-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346139/ArbaBrakumo_Body-3-Gloves-3-Fur-2_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          28
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346029/ArbaBrakumo_Body-1-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346035/ArbaBrakumo_Body-1-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346041/ArbaBrakumo_Body-1-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346046/ArbaBrakumo_Body-2-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346052/ArbaBrakumo_Body-2-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346058/ArbaBrakumo_Body-2-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          22,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346064/ArbaBrakumo_Body-3-Gloves-1-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346069/ArbaBrakumo_Body-3-Gloves-2-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346075/ArbaBrakumo_Body-3-Gloves-3-Fur-3_F.png",
+        "gender": "female",
+        "geneIds": [
+          23,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346092/ArbaBrakumo_Body-1-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346098/ArbaBrakumo_Body-1-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346104/ArbaBrakumo_Body-1-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          21,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346110/ArbaBrakumo_Body-2-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346116/ArbaBrakumo_Body-2-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346123/ArbaBrakumo_Body-2-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          22,
+          26,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346129/ArbaBrakumo_Body-3-Gloves-1-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          24,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346135/ArbaBrakumo_Body-3-Gloves-2-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          25,
+          29
+        ]
+      },
+      {
+        "juvenile": null,
+        "adult": "http://res.cloudinary.com/dqstgihcr/image/upload/v1728346140/ArbaBrakumo_Body-3-Gloves-3-Fur-3_M.png",
+        "gender": "male",
+        "geneIds": [
+          23,
+          26,
+          29
+        ]
+      }
+    ]
+  }
+]
