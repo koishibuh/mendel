@@ -279,25 +279,6 @@ const submitCreature = () => {
         <button class="button" disabled>❤️</button>
       </div>
 
-      <!--      <div class="flex justify-evenly items-center bg-[#b49484] pt-1">-->
-      <!--        <button class="md:w-[85px] md:h-[45px]" @click="prev">Last</button>-->
-      <!--        <div class="carousel overflow-hidden w-[266px] h-[95px]">-->
-      <!--          <div class="inner inline-flex gap-2 items-center" :class="innerStyle" ref="strip">-->
-      <!--            <div-->
-      <!--              class="card box p-2 flex items-center justify-center"-->
-      <!--              v-for="(creature, index) in filteredCreatures"-->
-      <!--              :key="index"-->
-      <!--              :style="{-->
-      <!--                backgroundColor: creature.viewed ? '#56a882' : '#eaeaea'-->
-      <!--              }"-->
-      <!--            >-->
-      <!--              <img :src="creature.portrait" class="mx-auto h-[65px] w-[85px] object-scale-down" />-->
-      <!--            </div>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <button class="md:w-[85px] md:h-[45px]" @click="next">Next</button>-->
-      <!--      </div>-->
-
       <div class="bg-brown py-2 flex min-h-[95px] min-w-[266px] justify-between self-center w-full sm:w-2/3 lg:w-full">
         <button
           class="bg-transparent flex justify-end items-center w-full"
