@@ -4,5 +4,7 @@ export interface IGrowingCreature {
   favoriteCount: number,
   age: number,
   genes: string,
+  species: string,
+  gender: string,
   viewed: boolean
 }
