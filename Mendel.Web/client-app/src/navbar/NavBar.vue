@@ -13,9 +13,9 @@ const closeMenu = () => {
     <RouterLink @click="closeMenu" :to="{ name: 'Review' }" class="button w-full mb-2"
       >Click</RouterLink
     >
-    <RouterLink @click="closeMenu" :to="{ name: 'Checklist' }" class="button w-full mb-2"
-      >Checklist</RouterLink
-    >
+<!--    <RouterLink @click="closeMenu" :to="{ name: 'Checklist' }" class="button w-full mb-2"-->
+<!--      >Checklist</RouterLink-->
+<!--    >-->
     <div id="windowSize"></div>
   </div>
 </template>
