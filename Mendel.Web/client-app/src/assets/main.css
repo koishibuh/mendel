@@ -1,11 +1,28 @@
 @import './base.css';
 
-input[type=button], button {
-    @apply bg-[#aed284] p-2 rounded hover:bg-[#71a239];
+body {
+    background-image: url('public/20240414-subtlepatterns-hexellence.png');
+    background-attachment: fixed;
 }
 
+input[type=button], .button {
+  /*  @apply text-white bg-[#955d50] p-1 hover:bg-[#713928] disabled:bg-[#dea987]  focus:outline-none focus:ring-2 focus:ring-blue-400;*/
+    @apply text-white bg-darkbrown p-2 min-w-[125px]
+    disabled:bg-darkgray disabled:text-black
+    focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+.toggle-button {
+    @apply min-w-[125px] capitalize border-2 border-darkbrown p-2
+    hover:bg-darkbrown
+    disabled:bg-lightbrown disabled:text-black
+    focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+
+
 input[type=text] {
-    @apply rounded p-2;
+    @apply rounded p-2 border border-black;
 }
 
 .rborder {
