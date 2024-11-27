@@ -3,14 +3,15 @@ import type { IGrowingCreature } from '@/review/model/IGrowingCreature';
 
 const props = defineProps<{
   creature: IGrowingCreature;
+  index: number;
 }>();
 
 const emit = defineEmits<{
-  creatureClicked: [string];
+  creatureClicked: [number];
 }>();
 
 const clickedCreature = () => {
-  emit('creatureClicked', props.creature.creatureCode);
+  emit('creatureClicked', props.index);
 }
 </script>
 

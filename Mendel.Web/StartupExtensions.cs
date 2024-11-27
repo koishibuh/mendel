@@ -2,6 +2,8 @@ using Mendel.Core.Common;
 using Mendel.Core.Configurations;
 using Mendel.Core.Exceptions;
 using Mendel.Core.Persistence;
+using Mendel.Core.Services.Cloudinary;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -23,15 +25,18 @@ public static class StartupExtensions
 		}
 
 		var settings = builder.Configuration.GetSection("Settings");
+		var cloudinarySettings = builder.Configuration.GetSection("CloudinarySettings");
 		builder.Services.Configure<Settings>(settings);
+		builder.Services.Configure<CloudinarySettings>(cloudinarySettings);
 
 		builder.Services.AddHttpClient("TheFinalOutpost", httpClient =>
 		httpClient.BaseAddress = new Uri("https://finaloutpost.net/api/v1/"));
 
+		builder.Services.AddHttpClient("Default");
+
 		builder.Services.AddSerilog((services, lc) => lc
 		.ReadFrom.Configuration(builder.Configuration)
 		.ReadFrom.Services(services)
-		//.Enrich.FromLogContext()
 		.WriteTo.Console());
 
 		builder.Services.AddAppServices();
@@ -39,8 +44,7 @@ public static class StartupExtensions
 
 		builder.Services.AddControllers();
 
-		// builder.Services.AddEndpointsApiExplorer();
-		builder.Services.AddSwaggerGen();
+		builder.Services.AddSwaggerGen(options => options.EnableAnnotations());
 
 		builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 		builder.Services.AddProblemDetails();
@@ -56,12 +60,23 @@ public static class StartupExtensions
 			app.UseSwaggerUI();
 		}
 
+		var forwardedHeaderOptions = new ForwardedHeadersOptions
+		{
+			ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
+			RequireHeaderSymmetry = false
+		};
+
+		forwardedHeaderOptions.KnownNetworks.Clear();
+		forwardedHeaderOptions.KnownProxies.Clear();
+		app.UseForwardedHeaders(forwardedHeaderOptions);
+
 		app.UseExceptionHandler();
 
-		// app.UseHttpsRedirection();
+		app.UseDefaultFiles();
 		app.UseStaticFiles();
 
 		app.UseRouting();
+
 		app.MapControllers();
 		app.MapFallbackToFile("index.html");
 

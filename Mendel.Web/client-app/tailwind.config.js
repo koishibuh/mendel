@@ -7,7 +7,13 @@ export default {
         g: '#378e4d',
         r: '#c13030',
         b: '#4f82bc',
-        e: '#60378e'
+        e: '#60378e',
+        sagegreen: '#515A4E',
+        lightgreen: '#b2c0a7',
+        darkbrown: '#713928',
+        brown: '#b49484',
+        lightbrown: '#dea987',
+        darkgray: '#cdced0'
       }
     }
   },
