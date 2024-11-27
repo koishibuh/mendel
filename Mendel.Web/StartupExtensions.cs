@@ -2,7 +2,7 @@ using Mendel.Core.Common;
 using Mendel.Core.Configurations;
 using Mendel.Core.Exceptions;
 using Mendel.Core.Persistence;
-using Mendel.Core.Services.Cloudinary;
+// using Mendel.Core.Services.Cloudinary;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -27,7 +27,7 @@ public static class StartupExtensions
 		var settings = builder.Configuration.GetSection("Settings");
 		var cloudinarySettings = builder.Configuration.GetSection("CloudinarySettings");
 		builder.Services.Configure<Settings>(settings);
-		builder.Services.Configure<CloudinarySettings>(cloudinarySettings);
+		// builder.Services.Configure<CloudinarySettings>(cloudinarySettings);
 
 		builder.Services.AddHttpClient("TheFinalOutpost", httpClient =>
 		httpClient.BaseAddress = new Uri("https://finaloutpost.net/api/v1/"));
