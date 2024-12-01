@@ -7,19 +7,18 @@ body {
 
 input[type=button], .button {
   /*  @apply text-white bg-[#955d50] p-1 hover:bg-[#713928] disabled:bg-[#dea987]  focus:outline-none focus:ring-2 focus:ring-blue-400;*/
-    @apply text-white bg-darkbrown p-2 min-w-[125px]
+    @apply text-offWhite bg-darkbrown p-2 min-w-[125px] text-center
+    hover:bg-sagegreen hover:text-offWhite
     disabled:bg-darkgray disabled:text-black
     focus:outline-none focus:ring-2 focus:ring-blue-400;
 }
 
 .toggle-button {
-    @apply min-w-[125px] capitalize border-2 border-darkbrown p-2
-    hover:bg-darkbrown
-    disabled:bg-lightbrown disabled:text-black
+    @apply min-w-[100px] capitalize border border-sagegreen p-1
+    bg-lightgreen hover:bg-darkbrown hover:text-offWhite
+    disabled:bg-sagegreen disabled:text-offWhite
     focus:outline-none focus:ring-2 focus:ring-blue-400;
 }
-
-
 
 input[type=text] {
     @apply rounded p-2 border border-black;

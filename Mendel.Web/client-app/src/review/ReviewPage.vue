@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, reactive, watch } from 'vue';
 import { useReviewStore } from '@/review/review.store';
-import CreatureBox from '@/review/CreatureBox.vue';
-import CarouselBox from '@/components/CarouselBox.vue';
 import type { IGrowingCreature } from '@/review/model/IGrowingCreature';
 import ToggleButton from '@/components/toggle-button/ToggleButton.vue';
+import { useGlobalStore } from '@/common/global.store';
+
+onMounted(() => {
+  setSelectedCreature();
+  setStep();
+  resetTranslate();
+});
 
 const store = useReviewStore();
-
-const scientistName = ref<string>('');
+const globalStore = useGlobalStore();
 
 const filterType = ref<string>('all');
 
@@ -33,11 +37,6 @@ watch(filterType, (newFilter) => {
   setSelectedCreature();
 });
 
-onMounted(() => {
-  setSelectedCreature();
-  setStep();
-  resetTranslate();
-});
 
 const setSelectedCreature = () => {
   selectedCreature.value = filteredCreatures.value[currentCreatureIndex.value];
@@ -46,12 +45,6 @@ const setSelectedCreature = () => {
 const strip = ref<HTMLDivElement | null>(null);
 const transitioning = ref(false);
 
-// const setStep = computed(() => {
-//   if (!strip.value) return;
-//
-//   const innerWidth = strip.value?.scrollWidth;
-//   return `${innerWidth / filteredCreatures.value.length}px`;
-// });
 const setStep = () => {
   if (!strip.value) return;
 
@@ -151,8 +144,9 @@ const calculatePercentage = computed(() => {
 });
 
 const barColor = computed(() => {
-  const green = Math.floor((progress.value / 100) * 255);
-  const red = 255 - green;
+  const intensity = 0.6;
+  const green = Math.floor((progress.value / 100) * 255 * intensity);
+  const red = Math.floor((255 - green) * intensity);
   return `rgb(${red}, ${green}, 0)`;
 });
 
@@ -172,63 +166,17 @@ const updateFilter = (filter: string) => {
   filterType.value = filter;
 };
 
-const loggedIn = ref<boolean>(false);
-
-const changeUser = () => {
-  loggedIn.value = false;
-  scientistName.value = '';
-};
-
-const setUser = () => {
-  loggedIn.value = true;
-  // check if user exists on TFO server, if so fetch growing creatures
-  // else display error
-};
-
-const creatureCode = ref<string>('');
-
-const submitCreature = () => {
-  //submit creature
-  // if not found, return error
-  creatureCode.value = '';
-};
 </script>
 
 <template>
-  <div class="flex flex-col gap-1 lg:w-3/4 mx-auto h-full">
-    <div v-if="loggedIn" class="flex flex-col gap-2">
-      <div class="w-full flex justify-between">
-        <div>
-          <p>Welcome Back</p>
-          <p>{{ scientistName }}</p>
-        </div>
-        <button @click="changeUser">Change User</button>
-      </div>
-      <div class="flex justify-between gap-2">
-        <button class="button">Import Creatures</button>
-        <div>
-          <div class="w-full">Add Creature By Code</div>
-          <div class="flex gap-2">
-            <input id="creature-code" class="w-full" type="text" v-model="creatureCode" />
-            <input type="button" @click="setUser" value="Submit" />
-          </div>
-        </div>
-      </div>
+    <div class="p-2">Description of click page.
     </div>
-    <div v-else>
-      <div id="scientistName" class="p-2">
-        <label for="scientist-name">Scientist Name</label>
-        <form @submit.prevent="setUser">
-          <div class="flex gap-2">
-            <input id="scientist-name" class="w-full" type="text" v-model="scientistName" />
-            <input type="button" @click="setUser" value="Submit" />
-          </div>
-        </form>
-      </div>
-    </div>
+<!--    <div class="flex flex-col gap-2 w-1/3">-->
+<!--      <button class="button ">Your Submissions</button>-->
+<!--    </div>-->
 
-    <div class="border-2">
-      <div class="text-center bg-[#bebebe]]">
+    <div class="p-2">
+      <div class="text-center bg-[#bebebe]">
         Researched {{ store.viewedCount }} / {{ store.creatures.length }}
         Creatures
       </div>
@@ -249,17 +197,18 @@ const submitCreature = () => {
       option2-name="adults"
       option3-name="all"
       @updateState="updateFilter"
+       class="px-2"
     />
 
-    <div id="tfoWindow" class="grow">
-      <iframe :src="pageUrl" class="w-full h-full"></iframe>
+    <div id="tfoWindow" class="grow mx-5 lg:mx-0">
+      <iframe :src="pageUrl" class="w-full h-full" scrolling="no"></iframe>
     </div>
 
     <div class="flex flex-col gap-2">
-      <div class="grid grid-flow-col justify-stretch gap-2">
+      <div class="flex gap-2 justify-center">
         <button
           v-if="selectedCreature?.genes == 'Unknown'"
-          class="button w-full"
+          class="button w-1/2"
           aria-label="Open example webpage"
           @click="openGoalPage"
           disabled
@@ -267,42 +216,42 @@ const submitCreature = () => {
           💾 Gene Unavailable
         </button>
 
-        <button
-          v-else
-          class="button w-full"
-          aria-label="Open example webpage"
-          @click="openGoalPage"
-        >
+        <button v-else class="button w-1/2" aria-label="Open example webpage" @click="openGoalPage">
           💾 Save Gene Goal
         </button>
 
-        <button class="button" disabled>❤️</button>
+<!--        <button class="button w-1/2" disabled>❤️</button>-->
       </div>
 
-      <div class="bg-brown py-2 flex min-h-[95px] min-w-[266px] justify-between self-center w-full sm:w-2/3 lg:w-full">
+      <div
+        class="bg-lightgreen py-2 flex min-h-[95px] min-w-[266px] justify-between self-center w-full"
+      >
         <button
           class="bg-transparent flex justify-end items-center w-full"
           @click="prev"
           aria-label="Previous Creature"
           type="button"
         >
-          <span class="text-white text-start w-[145px] me-1 px-5 py-4 bg-darkbrown hover:bg-lightbrown">Last</span>
+          <span
+            class="text-offWhite text-end w-[145px] me-1 px-4 py-2 bg-darkbrown hover:bg-sagegreen -scale-x-100 text-2xl"
+            >➤</span
+          >
         </button>
         <div class="relative w-[266px] h-[95px]">
           <div
-            class="absolute overflow-hidden w-[266px] h-[95px] left-1/2
-            -translate-x-1/2 pointer-events-none opacity-100"
+            class="absolute overflow-hidden w-[266px] h-[95px] left-1/2 -translate-x-1/2 pointer-events-none opacity-100"
           >
             <div class="inner inline-flex gap-2 items-center" :class="innerStyle" ref="strip">
               <div
                 class="card p-2 flex items-center justify-center"
                 v-for="(creature, index) in filteredCreatures"
                 :key="index"
-                :style="{ backgroundColor: 'white'
+                :style="{
+                  backgroundColor: 'white'
                   // backgroundColor: creature.viewed ? '#56a882' : '#eaeaea'
                 }"
               >
-                <img :src="creature.portrait" class="mx-auto h-[65px] w-[85px] object-scale-down" />
+                <img :src="creature.portrait" class="mx-auto h-[65px] w-[85px] object-scale-down" :alt="creature.creatureCode" />
                 <div v-if="creature.viewed" class="absolute bottom-0 left-0">✅</div>
               </div>
             </div>
@@ -314,11 +263,14 @@ const submitCreature = () => {
           aria-label="Next Creature"
           type="button"
         >
-          <span class="text-white text-end w-[145px] ms-1 px-5 py-4 bg-darkbrown hover:bg-lightbrown">Next</span>
+          <span
+            class="text-offWhite text-end w-[145px] ms-1 px-4 py-2 bg-darkbrown hover:bg-sagegreen hover:text-offWhite text-2xl"
+            >➤</span
+          >
         </button>
       </div>
     </div>
-  </div>
+
 </template>
 
 <style>
@@ -333,12 +285,13 @@ const submitCreature = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 1px;
   pointer-events: none;
 }
 
-.card:nth-child(1), .card:nth-child(3) {
+.card:nth-child(1),
+.card:nth-child(3) {
   @apply min-h-[80px] min-w-[80px] border-2 border-[#627c63];
 }
 
@@ -354,10 +307,9 @@ const submitCreature = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 1px;
   pointer-events: none;
-
 }
 
 .inner {

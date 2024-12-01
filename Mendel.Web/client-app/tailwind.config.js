@@ -8,12 +8,13 @@ export default {
         r: '#c13030',
         b: '#4f82bc',
         e: '#60378e',
-        sagegreen: '#515A4E',
-        lightgreen: '#b2c0a7',
         darkbrown: '#713928',
-        brown: '#b49484',
-        lightbrown: '#dea987',
-        darkgray: '#cdced0'
+        sagegreen: '#515A4E',
+        lightgreen: '#8d9d91',
+        jadegreen: '#799b9f',
+        darkgray: '#cdced0',
+        offWhite: '#eee5d8',
+        offBlack: '#1f2224'
       }
     }
   },

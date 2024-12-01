@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import ReviewPage from '@/review/ReviewPage.vue';
+import ImportPage from '@/review/ImportPage.vue';
 // import ChecklistPage from '@/checklist/ChecklistPage.vue';
 // import AdminPage from '@/admin/AdminPage.vue';
 // import SpeciesPage from '@/admin/SpeciesPage.vue';
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/',
       name: 'Review',
       component: ReviewPage
+    },
+    {
+      path: '/import',
+      name: 'Import',
+      component: ImportPage
     },
     // {
     //   path: '/checklist',
