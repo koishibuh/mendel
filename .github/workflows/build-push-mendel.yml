@@ -63,8 +63,9 @@ jobs:
           key: ${{secrets.DEPLOY_SSH_KEY}}
           script: |
             rm -rf mendel
+            gh auth login --with-token ${{secrets.GITHUB_TOKEN}}
             gh repo clone koishibuh/mendel
-            docker login ghcr.io -u ${{github.actor}} --password ${{ secrets.GITHUB_TOKEN }}
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login --username ${{ github.actor }} --password-stdin ghcr.io
             cd mendel
             cp docker-compose.yml /etc/docker-env && cd /etc/docker-env
             docker compose down
